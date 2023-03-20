@@ -13,13 +13,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/instantnoodle/device.mk)
 
 # Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
+XTENDED_BUILD_TYPE := OFFICIAL
+XTENDED_BUILD_MAINTAINER := Zizzyboi
+XTENDED_BUILD_DONATE_URL := https://paypal.me/twinchin96?country.x=CA&locale.x=en_US
+WITH_GAPPS := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_ENABLE_BLUR := true
+TARGET_INCLUDE_NGA := true
 
-PRODUCT_NAME := evolution_instantnoodle
+PRODUCT_NAME := xtended_instantnoodle
 PRODUCT_DEVICE := instantnoodle
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus

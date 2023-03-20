@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_instantnoodle.mk
+    $(LOCAL_DIR)/xtended_instantnoodle.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_instantnoodle-user \
-    evolution_instantnoodle-userdebug \
-    evolution_instantnoodle-eng
+    xtended_instantnoodle-user \
+    xtended_instantnoodle-userdebug \
+    xtended_instantnoodle-eng
